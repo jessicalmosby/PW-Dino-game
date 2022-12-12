@@ -69,3 +69,8 @@ main {
 .hidden {
     display: none;
 }
+
+.right-dinos {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
