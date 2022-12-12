@@ -16,8 +16,8 @@ body {
     font-family: var(--primary-font);
     color: var(--text-color);
     background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
+    /* display: grid; */
+    /* grid-template-rows: auto 1fr; */
 }
 
 .page-header {
@@ -51,6 +51,7 @@ body {
 
 main {
     padding: 20px;
+    width: 100%;
 }
 
 .avatar {
