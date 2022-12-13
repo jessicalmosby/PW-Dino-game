@@ -1,0 +1,29 @@
+/* body {
+    background: url('../assets/dinoCharactersVersion1.1 (1)/dinoCharacters-display.gif') no-repeat
+        center center fixed;
+} */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+body div {
+    border: solid black 1px;
+}
+
+#div-g {
+    background: #b6ff00;
+}
+
+#div-r {
+    background: #ff0000;
+}
+
+#div-y {
+    background: #ffae00;
+}
+
+#div-b {
+    background: #0094ff;
+}
