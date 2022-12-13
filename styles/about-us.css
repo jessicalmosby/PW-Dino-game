@@ -1,8 +1,3 @@
-/* body {
-    background: url('../assets/dinoCharactersVersion1.1 (1)/dinoCharacters-display.gif') no-repeat
-        center center fixed;
-} */
-
 @font-face {
     font-family: dinoBubbleFont;
     src: url(../assets/Jellies.ttf);
@@ -39,4 +34,20 @@ body {
     transform: translateX(-50%);
     position: absolute;
     font-size: 5rem;
+}
+
+#dino-gifs {
+    text-align: center;
+    z-index: 2;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#dino-gifs img {
+    height: 8rem;
 }
