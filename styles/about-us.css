@@ -3,13 +3,14 @@
         center center fixed;
 } */
 
+@font-face {
+    font-family: dinoBubbleFont;
+    src: url(../assets/Jellies.ttf);
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-body div {
-    border: solid black 1px;
 }
 
 #div-g {
@@ -26,4 +27,16 @@ body div {
 
 #div-b {
     background: #0094ff;
+}
+
+#dinodivs-title {
+    font-family: dinoBubbleFont;
+    color: black;
+    text-align: center;
+    z-index: 2;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 5rem;
 }
