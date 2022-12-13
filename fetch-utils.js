@@ -48,10 +48,10 @@ export async function getDinoById(user_id) {
 
 export async function incrementAction(user_id) {
     const dino = await getDinoById(user_id);
-    console.log(dino);
+    console.log(dino.actions[0].action_num);
     const response = await client
         .from('actions')
-        .update({ action_num: dino.action_num + 1 }, { onConflict: 'dino_id' })
+        .update({ action_num: dino.actions[0].action_num + 1 }, { onConflict: 'dino_id' })
         .match({ dino_id: dino.id });
 
     return checkError(response);
