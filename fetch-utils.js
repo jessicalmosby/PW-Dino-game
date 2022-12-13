@@ -33,3 +33,9 @@ export async function createDino() {
     const newDino = await client.from('dinos').insert({ user_id: getUser().id });
     return newDino;
 }
+
+export async function getDinoById(id) {
+    const response = await client.from('dinos').select('*').match({ id }).single();
+
+    return response;
+}
