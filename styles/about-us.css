@@ -51,3 +51,27 @@ body {
 #dino-gifs img {
     height: 8rem;
 }
+
+#name {
+    text-align: center;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#title {
+    text-align: center;
+    z-index: 2;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
