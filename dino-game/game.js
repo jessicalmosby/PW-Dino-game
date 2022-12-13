@@ -1,4 +1,4 @@
-import { getDinoById, getUser, signOutUser } from '../fetch-utils.js';
+import { getDinoById, getUser, incrementAction, signOutUser } from '../fetch-utils.js';
 
 const signoutLink = document.getElementById('signout-link');
 const eggImg = document.getElementById('egg-img');
@@ -10,5 +10,5 @@ signoutLink.addEventListener('click', async () => {
 });
 
 eggImg.addEventListener('click', async () => {
-    await getDinoById(user.id);
+    await incrementAction(user.id);
 });

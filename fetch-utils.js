@@ -34,8 +34,30 @@ export async function createDino() {
     return newDino;
 }
 
-export async function getDinoById(id) {
-    const response = await client.from('dinos').select('*').match({ id }).single();
+export async function createAction(dino_id) {
+    const newAction = await client.from('actions').insert({ dino_id });
 
-    return response;
+    return newAction;
+}
+
+export async function getDinoById(user_id) {
+    const response = await client.from('dinos').select('*, actions(*)').match({ user_id }).single();
+
+    return checkError(response);
+}
+
+export async function incrementAction(user_id) {
+    const dino = await getDinoById(user_id);
+    console.log(dino);
+    const response = await client
+        .from('actions')
+        .update({ action_num: dino.action_num + 1 }, { onConflict: 'dino_id' })
+        .match({ dino_id: dino.id });
+
+    return checkError(response);
+}
+
+function checkError({ data, error }) {
+    // eslint-disable-next-line no-console
+    return error ? console.error(error) : data;
 }
