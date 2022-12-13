@@ -28,3 +28,8 @@ export async function signOutUser() {
 }
 
 /* Data functions */
+
+export async function createDino() {
+    const newDino = await client.from('dinos').insert({ user_id: getUser().id });
+    return newDino;
+}
