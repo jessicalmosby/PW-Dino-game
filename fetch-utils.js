@@ -31,13 +31,13 @@ export async function signOutUser() {
 
 export async function createDino() {
     const newDino = await client.from('dinos').insert({ user_id: getUser().id });
-    return newDino;
+    return checkError(newDino);
 }
 
 export async function createAction(dino_id) {
-    const newAction = await client.from('actions').insert({ dino_id });
+    const newAction = await client.from('actions').insert({ dino_id }).single();
 
-    return newAction;
+    return checkError(newAction);
 }
 
 export async function getDinoById(user_id) {

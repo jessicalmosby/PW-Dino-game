@@ -12,7 +12,7 @@ const startBtn = document.getElementById('start-button');
 startBtn.addEventListener('click', async () => {
     const dino = await createDino();
     console.log(dino);
-    const dinoAction = await createAction(dino.data[0].id);
+    const dinoAction = await createAction(dino[0].id);
     console.log(dinoAction);
     debugger;
     location.replace('/dino-game');
