@@ -48,11 +48,21 @@ export async function getDinoById(user_id) {
 
 export async function incrementAction(user_id) {
     const dino = await getDinoById(user_id);
-    console.log(dino.actions[0].action_num);
+
     const response = await client
         .from('actions')
         .update({ action_num: dino.actions[0].action_num + 1 }, { onConflict: 'dino_id' })
         .match({ dino_id: dino.id });
+
+    return checkError(response);
+}
+
+export async function fetchActions(user_id) {
+    const dino = await getDinoById(user_id);
+    const response = await client
+        .from('actions')
+        .select('action_num')
+        .match({ dino_id: dino.actions[0].dino_id });
 
     return checkError(response);
 }
