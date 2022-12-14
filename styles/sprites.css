@@ -1,0 +1,237 @@
+.animation-egg-move {
+    position: absolute;
+    background: transparent url('/assets/young/egg/move.png') 0 0 no-repeat;
+    width: calc(672px / 4);
+    height: 168px;
+    animation: egg-move 0.5s steps(4) infinite;
+}
+
+@keyframes egg-move {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+.animation-egg-crack {
+    position: absolute;
+    background: transparent url('/assets/young/egg/crack.png') 0 0 no-repeat;
+    width: calc(672px / 4);
+    height: 168px;
+    animation: egg-crack 1s steps(4) infinite;
+}
+
+@keyframes egg-crack {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+.animation-egg-hatch {
+    position: absolute;
+    background: transparent url('/assets/young/egg/hatch.png') 0 0 no-repeat;
+    width: calc(672px / 4);
+    height: 168px;
+    animation: egg-hatch 1s steps(4) infinite;
+}
+
+@keyframes egg-hatch {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+.animation-avoid {
+    position: absolute;
+    background: transparent url('/assets/young/base/avoid.png') 0 0 no-repeat;
+    width: calc(504px / 3);
+    height: 168px;
+    animation: avoid 0.5s steps(3) infinite;
+}
+
+@keyframes avoid {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -504px;
+    }
+}
+
+.animation-bite {
+    position: absolute;
+    background: transparent url('/assets/young/base/bite.png') 0 0 no-repeat;
+    width: calc(504px / 3);
+    height: 168px;
+    animation: bite 0.5s steps(3) infinite;
+}
+
+@keyframes bite {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -504px;
+    }
+}
+
+.animation-dash {
+    position: absolute;
+    background: transparent url('/assets/young/base/dash.png') 0 0 no-repeat;
+    width: calc(1008px / 6);
+    height: 168px;
+    animation: dash 0.5s steps(6) infinite;
+}
+
+@keyframes dash {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1008px;
+    }
+}
+
+.animation-dead {
+    position: absolute;
+    background: transparent url('/assets/young/base/dead.png') 0 0 no-repeat;
+    width: calc(840px / 5);
+    height: 168px;
+    animation: dead 0.5s steps(5) infinite;
+}
+
+@keyframes dead {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -840px;
+    }
+}
+
+.animation-hurt {
+    position: absolute;
+    background: transparent url('/assets/young/base/hurt.png') 0 0 no-repeat;
+    width: calc(672px / 4);
+    height: 168px;
+    animation: hurt 0.5s steps(4) infinite;
+}
+
+@keyframes hurt {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+.animation-idle {
+    position: absolute;
+    background: transparent url('/assets/young/base/idle.png') 0 0 no-repeat;
+    width: calc(504px / 3);
+    height: 168px;
+    animation: idle 0.5s steps(3) infinite;
+}
+
+@keyframes idle {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -504px;
+    }
+}
+
+.animation-jump {
+    position: absolute;
+    background: transparent url('/assets/young/base/jump.png') 0 0 no-repeat;
+    width: calc(672px / 4);
+    height: 168px;
+    animation: jump 0.5s steps(4) infinite;
+}
+
+@keyframes jump {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
+
+.animation-kick {
+    position: absolute;
+    background: transparent url('/assets/young/base/kick.png') 0 0 no-repeat;
+    width: calc(504px / 3);
+    height: 168px;
+    animation: kick 0.5s steps(3) infinite;
+}
+
+@keyframes kick {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -504px;
+    }
+}
+
+.animation-move {
+    position: absolute;
+    background: transparent url('/assets/young/base/move.png') 0 0 no-repeat;
+    width: calc(1008px / 6);
+    height: 168px;
+    animation: move 0.5s steps(6) infinite;
+}
+
+@keyframes move {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1008px;
+    }
+}
+
+.animation-ghost-idle {
+    position: absolute;
+    background: transparent url('/assets/young/ghost/idle.png') 0 0 no-repeat;
+    width: calc(504px / 3);
+    height: 168px;
+    animation: ghost-idle 0.5s steps(3) infinite;
+}
+
+@keyframes ghost-idle {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -504px;
+    }
+}
+
+.animation-ghost-move {
+    position: absolute;
+    background: transparent url('/assets/young/ghost/move.png') 0 0 no-repeat;
+    width: calc(672px / 4);
+    height: 168px;
+    animation: ghost-move 0.5s steps(4) infinite;
+}
+
+@keyframes ghost-move {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -672px;
+    }
+}
