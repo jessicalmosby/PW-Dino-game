@@ -7,10 +7,10 @@ import {
     signOutUser,
 } from '../fetch-utils.js';
 
-const signoutLink = document.getElementById('signout-link');
+const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
 
-signoutLink.addEventListener('click', async () => {
+signOutLink.addEventListener('click', async () => {
     await signOutUser();
 });
 

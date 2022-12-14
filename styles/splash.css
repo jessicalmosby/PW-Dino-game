@@ -1,0 +1,10 @@
+.splash-page-body {
+    background: url('../assets/splashPageBackground.gif');
+    background-size: contain;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
