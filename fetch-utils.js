@@ -29,8 +29,10 @@ export async function signOutUser() {
 
 /* Data functions */
 
-export async function createDino() {
-    const newDino = await client.from('dinos').insert({ user_id: getUser().id });
+export async function createDino(nameDino) {
+    const newDino = await client
+        .from('dinos')
+        .upsert({ user_id: getUser().id, name: nameDino }, { onConflict: 'user_id' });
     return checkError(newDino);
 }
 
@@ -48,10 +50,10 @@ export async function getDinoById(user_id) {
 
 export async function incrementAction(user_id) {
     const dino = await getDinoById(user_id);
-
+    console.log(dino);
     const response = await client
         .from('actions')
-        .update({ action_num: dino.actions[0].action_num + 1 }, { onConflict: 'dino_id' })
+        .update({ action_num: dino.actions[0].action_num + 1 })
         .match({ dino_id: dino.id });
 
     return checkError(response);
