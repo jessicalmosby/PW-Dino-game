@@ -25,3 +25,10 @@ header {
     justify-content: flex-end;
     padding-right: 20px;
 }
+
+#dino-name {
+    /* background-color: rgba(250, 235, 215, 0.502); */
+    color: rgb(254, 237, 199);
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 1.3rem;
+}
