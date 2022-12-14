@@ -8,10 +8,6 @@
     cursor: url('../assets/dinoCursor.png'), auto;
 }
 
-#egg-img {
-    height: 10rem;
-}
-
 #egg-div {
     display: flex;
     justify-content: center;

@@ -35,18 +35,21 @@ async function displayDino() {
     const dino = await getDinoById(user.id);
     console.log(dino.name);
     if (actionNum[0].action_num === 0) {
-        eggImg.src = '../assets/egg-move.gif';
+        eggImg.classList.add('animation-egg-move');
     } else if (actionNum[0].action_num === 1) {
-        eggImg.src = '../assets/egg-crack.gif';
+        eggImg.classList.replace('animation-egg-move', 'animation-egg-crack');
     } else if (actionNum[0].action_num === 2) {
-        eggImg.src = '../assets/egg-hatch.gif';
+        eggImg.classList.replace('animation-egg-crack', 'animation-egg-hatch');
     } else if (actionNum[0].action_num === 3) {
-        eggImg.src = '../assets/DinoSprite.gif';
+        eggImg.classList.replace('animation-egg-hatch', 'animation-idle');
         if (!dino.name) {
             nameDino();
         }
     } else {
-        eggImg.src = '../assets/DinoSprite.gif';
+        eggImg.classList.remove('animation-egg-move');
+        eggImg.classList.remove('animation-egg-crack');
+        eggImg.classList.remove('animation-egg-hatch');
+        eggImg.classList.add('animation-idle');
         return;
     }
 }
