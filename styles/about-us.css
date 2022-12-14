@@ -75,3 +75,15 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
+#bio {
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
