@@ -1,15 +1,7 @@
-/* #test {
-    position: absolute;
-    height: 500px;
-    width: 500px;
-    border: solid black 1px;
-    background: transparent url('/assets/young/egg/move.png') 0 0 no-repeat;
-} */
-
 .animation-egg-move {
     position: absolute;
     background: transparent url('/assets/young/egg/move.png') 0 0 no-repeat;
-    width: calc(672px / 4);
+    width: calc(1728px / 4);
     height: 168px;
     animation: egg-move 0.5s steps(4) infinite;
 }
@@ -19,14 +11,14 @@
         background-position: 0;
     }
     to {
-        background-position: -672px;
+        background-position: -1728px;
     }
 }
 
 .animation-egg-crack {
     position: absolute;
     background: transparent url('/assets/young/egg/crack.png') 0 0 no-repeat;
-    width: calc(672px / 4);
+    width: calc(1728px / 4);
     height: 168px;
     animation: egg-crack 1s steps(4) infinite;
 }
@@ -36,14 +28,14 @@
         background-position: 0;
     }
     to {
-        background-position: -672px;
+        background-position: -1728px;
     }
 }
 
 .animation-egg-hatch {
     position: absolute;
     background: transparent url('/assets/young/egg/hatch.png') 0 0 no-repeat;
-    width: calc(672px / 4);
+    width: calc(1728px / 4);
     height: 168px;
     animation: egg-hatch 1s steps(4) infinite;
 }
@@ -53,14 +45,14 @@
         background-position: 0;
     }
     to {
-        background-position: -672px;
+        background-position: -1728px;
     }
 }
 
 .animation-avoid {
     position: absolute;
     background: transparent url('/assets/young/base/avoid.png') 0 0 no-repeat;
-    width: calc(504px / 3);
+    width: calc(1296px / 3);
     height: 168px;
     animation: avoid 0.5s steps(3) infinite;
 }
@@ -70,14 +62,14 @@
         background-position: 0;
     }
     to {
-        background-position: -504px;
+        background-position: -1296px;
     }
 }
 
 .animation-bite {
     position: absolute;
     background: transparent url('/assets/young/base/bite.png') 0 0 no-repeat;
-    width: calc(504px / 3);
+    width: calc(1296px / 3);
     height: 168px;
     animation: bite 0.5s steps(3) infinite;
 }
@@ -87,14 +79,14 @@
         background-position: 0;
     }
     to {
-        background-position: -504px;
+        background-position: -1296px;
     }
 }
 
 .animation-dash {
     position: absolute;
     background: transparent url('/assets/young/base/dash.png') 0 0 no-repeat;
-    width: calc(1008px / 6);
+    width: calc(2592px / 6);
     height: 168px;
     animation: dash 0.5s steps(6) infinite;
 }
@@ -104,14 +96,14 @@
         background-position: 0;
     }
     to {
-        background-position: -1008px;
+        background-position: -2592px;
     }
 }
 
 .animation-dead {
     position: absolute;
     background: transparent url('/assets/young/base/dead.png') 0 0 no-repeat;
-    width: calc(840px / 5);
+    width: calc(2160px / 5);
     height: 168px;
     animation: dead 0.5s steps(5) infinite;
 }
@@ -121,14 +113,14 @@
         background-position: 0;
     }
     to {
-        background-position: -840px;
+        background-position: -2160px;
     }
 }
 
 .animation-hurt {
     position: absolute;
     background: transparent url('/assets/young/base/hurt.png') 0 0 no-repeat;
-    width: calc(672px / 4);
+    width: calc(1728px / 4);
     height: 168px;
     animation: hurt 0.5s steps(4) infinite;
 }
@@ -138,14 +130,14 @@
         background-position: 0;
     }
     to {
-        background-position: -672px;
+        background-position: -1728px;
     }
 }
 
 .animation-idle {
     position: absolute;
     background: transparent url('/assets/young/base/idle.png') 0 0 no-repeat;
-    width: calc(504px / 3);
+    width: calc(1296px / 3);
     height: 168px;
     animation: idle 0.5s steps(3) infinite;
 }
@@ -155,14 +147,14 @@
         background-position: 0;
     }
     to {
-        background-position: -504px;
+        background-position: -1296px;
     }
 }
 
 .animation-jump {
     position: absolute;
     background: transparent url('/assets/young/base/jump.png') 0 0 no-repeat;
-    width: calc(672px / 4);
+    width: calc(1728px / 4);
     height: 168px;
     animation: jump 0.5s steps(4) infinite;
 }
@@ -172,14 +164,14 @@
         background-position: 0;
     }
     to {
-        background-position: -672px;
+        background-position: -1728px;
     }
 }
 
 .animation-kick {
     position: absolute;
     background: transparent url('/assets/young/base/kick.png') 0 0 no-repeat;
-    width: calc(504px / 3);
+    width: calc(1296px / 3);
     height: 168px;
     animation: kick 0.5s steps(3) infinite;
 }
@@ -189,14 +181,14 @@
         background-position: 0;
     }
     to {
-        background-position: -504px;
+        background-position: -1296px;
     }
 }
 
 .animation-move {
     position: absolute;
     background: transparent url('/assets/young/base/move.png') 0 0 no-repeat;
-    width: calc(1008px / 6);
+    width: calc(2592px / 6);
     height: 168px;
     animation: move 0.5s steps(6) infinite;
 }
@@ -206,14 +198,14 @@
         background-position: 0;
     }
     to {
-        background-position: -1008px;
+        background-position: -2592px;
     }
 }
 
 .animation-ghost-idle {
     position: absolute;
     background: transparent url('/assets/young/ghost/idle.png') 0 0 no-repeat;
-    width: calc(504px / 3);
+    width: calc(1296px / 3);
     height: 168px;
     animation: ghost-idle 0.5s steps(3) infinite;
 }
@@ -223,14 +215,14 @@
         background-position: 0;
     }
     to {
-        background-position: -504px;
+        background-position: -1296px;
     }
 }
 
 .animation-ghost-move {
     position: absolute;
     background: transparent url('/assets/young/ghost/move.png') 0 0 no-repeat;
-    width: calc(672px / 4);
+    width: calc(1728px / 4);
     height: 168px;
     animation: ghost-move 0.5s steps(4) infinite;
 }
@@ -240,6 +232,6 @@
         background-position: 0;
     }
     to {
-        background-position: -672px;
+        background-position: -1728px;
     }
 }
