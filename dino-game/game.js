@@ -14,24 +14,42 @@ signoutLink.addEventListener('click', async () => {
     await signOutUser();
 });
 
-eggImg.addEventListener('click', async () => {
-    const user = await getUser();
+window.addEventListener('load', async () => {
+    await displayDino();
+});
 
-    const newAction = await incrementAction(user.id);
-    console.log(newAction);
+async function grabUserFunc() {
+    return await getUser();
+}
+
+eggImg.addEventListener('click', async () => {
+    const user = await grabUserFunc();
+    await incrementAction(user.id);
+    await displayDino();
+});
+
+async function displayDino() {
+    const user = await grabUserFunc();
     //code is wet, look for alts//
     const actionNum = await fetchActions(user.id);
-    console.log(actionNum);
-    if (actionNum[0].action_num === 1) {
+    const dino = await getDinoById(user.id);
+    console.log(dino.name);
+    if (actionNum[0].action_num === 0) {
+        eggImg.src = '../assets/egg-move.gif';
+    } else if (actionNum[0].action_num === 1) {
         eggImg.src = '../assets/egg-crack.gif';
     } else if (actionNum[0].action_num === 2) {
         eggImg.src = '../assets/egg-hatch.gif';
+    } else if (actionNum[0].action_num === 3) {
+        eggImg.src = '../assets/DinoSprite.gif';
+        if (!dino.name) {
+            nameDino();
+        }
     } else {
         eggImg.src = '../assets/DinoSprite.gif';
-        nameDino();
+        return;
     }
-    console.log(await getDinoById(user.id));
-});
+}
 
 async function nameDino() {
     let text;
