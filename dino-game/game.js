@@ -7,6 +7,8 @@ import {
     signOutUser,
 } from '../fetch-utils.js';
 
+const dinoName = document.getElementById('dino-name');
+
 const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
 
@@ -46,6 +48,7 @@ async function displayDino() {
             nameDino();
         }
     } else {
+        dinoName.innerHTML = dino.name;
         eggImg.classList.remove('animation-egg-move');
         eggImg.classList.remove('animation-egg-crack');
         eggImg.classList.remove('animation-egg-hatch');
@@ -62,6 +65,6 @@ async function nameDino() {
     } else {
         text = yourDino;
     }
-    document.getElementById('dino-name').innerHTML = text;
+    dinoName.innerHTML = text;
     await createDino(text);
 }
