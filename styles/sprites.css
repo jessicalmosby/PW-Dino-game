@@ -15,6 +15,23 @@
     }
 }
 
+.animation-egg-move2 {
+    position: absolute;
+    background: transparent url('/assets/young/egg/move.png') 0 0 no-repeat;
+    width: calc(1728px / 4);
+    height: 432px;
+    animation: egg-move 0.2s steps(4) infinite;
+}
+
+@keyframes egg-move {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1728px;
+    }
+}
+
 .animation-egg-crack {
     position: absolute;
     background: transparent url('/assets/young/egg/crack.png') 0 0 no-repeat;
@@ -32,12 +49,29 @@
     }
 }
 
+.animation-egg-crack2 {
+    position: absolute;
+    background: transparent url('/assets/young/egg/crack.png') 0 0 no-repeat;
+    width: calc(1728px / 4);
+    height: 432px;
+    animation: egg-crack 0.2s steps(4) infinite;
+}
+
+@keyframes egg-crack {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1728px;
+    }
+}
+
 .animation-egg-hatch {
     position: absolute;
     background: transparent url('/assets/young/egg/hatch.png') 0 0 no-repeat;
     width: calc(1728px / 4);
     height: 432px;
-    animation: egg-hatch 1s steps(4) infinite;
+    animation: egg-hatch 1.4s steps(4) forwards;
 }
 
 @keyframes egg-hatch {

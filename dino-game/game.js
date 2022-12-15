@@ -43,10 +43,15 @@ async function displayDino() {
     if (actionNum[0].action_num === 0) {
         eggImg.classList.add('animation-egg-move');
     } else if (actionNum[0].action_num === 1) {
-        eggImg.classList.add('animation-egg-crack');
+        eggImg.classList.add('animation-egg-move2');
     } else if (actionNum[0].action_num === 2) {
-        eggImg.classList.add('animation-egg-hatch');
+        eggImg.classList.add('animation-egg-crack');
     } else if (actionNum[0].action_num === 3) {
+        eggImg.classList.add('animation-egg-crack2');
+    } else if (actionNum[0].action_num === 4) {
+        eggImg.classList.add('animation-egg-hatch');
+    } else if (actionNum[0].action_num === 5) {
+        //much if the follow code is for if they refresh the page during the hatching process
         eggImg.classList.add('animation-idle');
         if (!dino.name) {
             nameDino();
