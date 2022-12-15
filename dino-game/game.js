@@ -35,15 +35,14 @@ async function displayDino() {
     //code is wet, look for alts//
     const actionNum = await fetchActions(user.id);
     const dino = await getDinoById(user.id);
-    console.log(dino.name);
     if (actionNum[0].action_num === 0) {
         eggImg.classList.add('animation-egg-move');
     } else if (actionNum[0].action_num === 1) {
-        eggImg.classList.replace('animation-egg-move', 'animation-egg-crack');
+        eggImg.classList.add('animation-egg-crack');
     } else if (actionNum[0].action_num === 2) {
-        eggImg.classList.replace('animation-egg-crack', 'animation-egg-hatch');
+        eggImg.classList.add('animation-egg-hatch');
     } else if (actionNum[0].action_num === 3) {
-        eggImg.classList.replace('animation-egg-hatch', 'animation-idle');
+        eggImg.classList.add('animation-idle');
         if (!dino.name) {
             nameDino();
         }
