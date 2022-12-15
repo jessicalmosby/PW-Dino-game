@@ -71,7 +71,7 @@
     background: transparent url('/assets/young/egg/hatch.png') 0 0 no-repeat;
     width: calc(1728px / 4);
     height: 432px;
-    animation: egg-hatch 1.4s steps(4) forwards;
+    animation: egg-hatch 1.4s steps(4) infinite;
 }
 
 @keyframes egg-hatch {
