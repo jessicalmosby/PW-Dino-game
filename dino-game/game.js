@@ -35,7 +35,12 @@ feedButton.addEventListener('click', () => {
 });
 
 exerButton.addEventListener('click', () => {
-    eggImg.classList.replace('animation-idle', 'animation-jump');
+    eggImg.classList.remove('animation-egg-move');
+    eggImg.classList.remove('animation-egg-crack');
+    eggImg.classList.remove('animation-egg-hatch');
+    eggImg.classList.remove('animation-idle');
+    eggImg.classList.remove('animation-bite');
+    eggImg.classList.add('animation-jump');
 });
 
 signOutLink.addEventListener('click', async () => {
