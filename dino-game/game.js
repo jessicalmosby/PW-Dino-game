@@ -13,18 +13,22 @@ const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
 const feedButton = document.getElementById('feed-button');
 const exerButton = document.getElementById('ex-button');
-const actionButtons = document.querySelector('.game-button');
+// const actionButtons = document.querySelector('.game-button');
 
 const moveFx = document.getElementById('shake-audio');
 const crackFx = document.getElementById('crack-audio');
 const hatchFx = document.getElementById('hatch-audio');
 const shellFx = document.getElementById('out-shell-audio');
+const biteFx = document.getElementById('chomp-audio');
+const jumpFx = document.getElementById('jump-audio');
 
 //state
-moveFx.volume = 0.4;
-crackFx.volume = 0.4;
-hatchFx.volume = 0.4;
-shellFx.volume = 0.4;
+moveFx.volume = 0.2;
+crackFx.volume = 0.2;
+hatchFx.volume = 0.2;
+shellFx.volume = 0.3;
+biteFx.volume = 0.2;
+jumpFx.volume = 0.2;
 
 feedButton.addEventListener('click', () => {
     eggImg.classList.remove('animation-egg-move');
@@ -33,6 +37,7 @@ feedButton.addEventListener('click', () => {
     eggImg.classList.remove('animation-idle');
     eggImg.classList.remove('animation-jump');
     eggImg.classList.add('animation-bite');
+    biteFx.play();
 });
 
 exerButton.addEventListener('click', () => {
@@ -42,6 +47,7 @@ exerButton.addEventListener('click', () => {
     eggImg.classList.remove('animation-idle');
     eggImg.classList.remove('animation-bite');
     eggImg.classList.add('animation-jump');
+    jumpFx.play();
 });
 
 signOutLink.addEventListener('click', async () => {
@@ -90,7 +96,8 @@ async function displayDino() {
     } else if (actionNum[0].action_num === 5) {
         //much if the follow code is for if they refresh the page during the hatching process
         eggImg.classList.add('animation-idle');
-        actionButtons.classList.add('reveal');
+        feedButton.classList.add('reveal');
+        exerButton.classList.add('reveal');
         shellFx.play();
         if (!dino.name) {
             nameDino();
@@ -98,7 +105,8 @@ async function displayDino() {
             dinoName.innerHTML = dino.name;
         }
     } else {
-        actionButtons.classList.add('reveal');
+        feedButton.classList.add('reveal');
+        exerButton.classList.add('reveal');
         dinoName.innerHTML = dino.name;
         eggImg.classList.remove('animation-egg-move');
         eggImg.classList.remove('animation-egg-crack');
