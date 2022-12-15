@@ -12,7 +12,7 @@ const dinoName = document.getElementById('dino-name');
 const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
 const feedButton = document.getElementById('feed-button');
-const exerButton = document.getElementById('exButton');
+const exerButton = document.getElementById('ex-button');
 
 const moveFx = document.getElementById('shake-audio');
 const crackFx = document.getElementById('crack-audio');
@@ -24,6 +24,19 @@ moveFx.volume = 0.4;
 crackFx.volume = 0.4;
 hatchFx.volume = 0.4;
 shellFx.volume = 0.4;
+
+feedButton.addEventListener('click', () => {
+    eggImg.classList.remove('animation-egg-move');
+    eggImg.classList.remove('animation-egg-crack');
+    eggImg.classList.remove('animation-egg-hatch');
+    eggImg.classList.remove('animation-idle');
+    eggImg.classList.remove('animation-jump');
+    eggImg.classList.add('animation-bite');
+});
+
+exerButton.addEventListener('click', () => {
+    eggImg.classList.replace('animation-idle', 'animation-jump');
+});
 
 signOutLink.addEventListener('click', async () => {
     await signOutUser();
