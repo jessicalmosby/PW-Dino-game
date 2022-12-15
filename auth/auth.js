@@ -18,6 +18,12 @@ const errorDisplay = authForm.querySelector('.error');
 let isSignIn = true;
 
 /* Events */
+// eslint-disable-next-line space-before-function-paren
+window.onclick = function () {
+    const authTrack = document.getElementById('auth-track');
+    authTrack.volume = 0.03;
+    authTrack.play();
+};
 
 window.addEventListener('load', () => {
     displayAuth();
