@@ -21,6 +21,7 @@ let isSignIn = true;
 // eslint-disable-next-line space-before-function-paren
 
 window.addEventListener('load', (e) => {
+    e.preventDefault();
     const authTrack = document.getElementById('auth-track');
     authTrack.volume = 0.03;
     authTrack.play();

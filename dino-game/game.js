@@ -12,6 +12,17 @@ const dinoName = document.getElementById('dino-name');
 const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
 
+const moveFx = document.getElementById('shake-audio');
+const crackFx = document.getElementById('crack-audio');
+const hatchFx = document.getElementById('hatch-audio');
+const shellFx = document.getElementById('out-shell-audio');
+
+//state
+moveFx.volume = 0.4;
+crackFx.volume = 0.4;
+hatchFx.volume = 0.4;
+shellFx.volume = 0.4;
+
 signOutLink.addEventListener('click', async () => {
     await signOutUser();
 });
@@ -42,23 +53,23 @@ async function displayDino() {
     const dino = await getDinoById(user.id);
     if (actionNum[0].action_num === 0) {
         eggImg.classList.add('animation-egg-move');
-        //shake
+        moveFx.play();
     } else if (actionNum[0].action_num === 1) {
         eggImg.classList.add('animation-egg-move2');
-        //shake
+        moveFx.play();
     } else if (actionNum[0].action_num === 2) {
         eggImg.classList.add('animation-egg-crack');
-        //crack
+        crackFx.play();
     } else if (actionNum[0].action_num === 3) {
         eggImg.classList.add('animation-egg-crack2');
-        //crack
+        crackFx.play();
     } else if (actionNum[0].action_num === 4) {
         eggImg.classList.add('animation-egg-hatch');
-        //hatch
+        hatchFx.play();
     } else if (actionNum[0].action_num === 5) {
         //much if the follow code is for if they refresh the page during the hatching process
         eggImg.classList.add('animation-idle');
-        //outshell
+        shellFx.play();
         if (!dino.name) {
             nameDino();
         } else {
