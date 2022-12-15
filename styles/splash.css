@@ -36,5 +36,11 @@ footer {
 }
 
 #start-button {
-    background-color: transparent;
+    height: min-content;
+    align-self: center;
+    margin-right: 2rem;
+}
+
+#start-button:hover {
+    height: 6rem;
 }
