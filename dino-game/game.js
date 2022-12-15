@@ -13,6 +13,7 @@ const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
 const feedButton = document.getElementById('feed-button');
 const exerButton = document.getElementById('ex-button');
+const actionButtons = document.querySelector('.game-button');
 
 const moveFx = document.getElementById('shake-audio');
 const crackFx = document.getElementById('crack-audio');
@@ -89,6 +90,7 @@ async function displayDino() {
     } else if (actionNum[0].action_num === 5) {
         //much if the follow code is for if they refresh the page during the hatching process
         eggImg.classList.add('animation-idle');
+        actionButtons.classList.add('reveal');
         shellFx.play();
         if (!dino.name) {
             nameDino();
@@ -96,6 +98,7 @@ async function displayDino() {
             dinoName.innerHTML = dino.name;
         }
     } else {
+        actionButtons.classList.add('reveal');
         dinoName.innerHTML = dino.name;
         eggImg.classList.remove('animation-egg-move');
         eggImg.classList.remove('animation-egg-crack');

@@ -41,9 +41,14 @@ header {
 }
 
 .game-button {
+    display: none;
     padding: 12px;
     margin: 5px;
     background: coral;
     font-size: 1.5rem;
     box-shadow: 0 1px 3px rgba(3, 19, 1, 0.75), 0 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+.reveal {
+    display: flex;
 }
