@@ -5,16 +5,12 @@
     align-items: flex-end;
     width: 100%;
     background-position-y: 90%;
-    cursor: url('../assets/dinoCursor.png'), auto;
 }
 
 #egg-div {
     display: flex;
     justify-content: center;
     margin-right: 15%;
-}
-#egg-div:hover {
-    cursor: url('../assets/egg-crack.gif'), auto;
 }
 
 header {

@@ -16,9 +16,7 @@ body {
     font-family: var(--primary-font);
     color: var(--text-color);
     background: var(--background);
-
-    /* display: grid; */
-    /* grid-template-rows: auto 1fr; */
+    cursor: url('../assets/small-dino-cursor.png'), auto;
 }
 
 .page-header {
@@ -153,9 +151,3 @@ main {
         background-position: 0 0;
     }
 }
-
-/* Start https://www.cursors-4u.com */
-* {
-    cursor: url(https://cur.cursors-4u.net/symbols/sym-6/sym547.ani),
-        url(https://cur.cursors-4u.net/symbols/sym-6/sym547.png), auto !important;
-} /* End https://www.cursors-4u.com */
