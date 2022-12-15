@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="/styles/reset.css" />
         <link rel="stylesheet" href="/styles/global.css" />
         <link rel="stylesheet" href="/styles/splash.css" />
+        <link rel="stylesheet" href="/styles/sprites.css" />
         <!-- add link for page specific css -->
     </head>
 
@@ -39,16 +40,18 @@
         <main>
             <img src="../assets/dinogatchiTitle.png" alt="Dinogatchi" />
             <div id="dino-button-container">
-                <img src='assets/bbDinoCrew.gif' class="left-dinos"></img>
-                <button id="start-button">
-                    <img src="../assets/start.png"/>
-                </button>
-                <img src='assets/bbDinoCrew.gif' class="right-dinos"></img>
+                <div class="left-dinos austin-sprite"></div>
+                <div class="left-dinos jess-sprite"></div>
+
+                <img id="start-button" src="../assets/start.png" />
+
+                <div class="right-dinos grey-sprite"></div>
+                <div class="right-dinos moni-sprite"></div>
             </div>
         </main>
 
         <footer>
-                <a href="/about-us">About the dinoDevs</a>
+            <a href="/about-us">About the dinoDevs</a>
         </footer>
     </body>
 </html>
