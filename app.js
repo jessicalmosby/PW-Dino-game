@@ -15,4 +15,10 @@ startBtn.addEventListener('click', async () => {
     location.replace('/dino-game');
 });
 
+window.addEventListener('load', (e) => {
+    const gameTrack = document.getElementById('game-track');
+    gameTrack.volume = 0.03;
+    gameTrack.play();
+});
+
 /* Display Functions */

@@ -16,15 +16,14 @@ signOutLink.addEventListener('click', async () => {
     await signOutUser();
 });
 
-window.addEventListener('load', async () => {
+window.addEventListener('load', async (e) => {
+    e.preventDefault();
+    const gameTrack = document.getElementById('game-track');
+    gameTrack.volume = 0.03;
+    gameTrack.play();
+
     await displayDino();
 });
-
-window.onclick = function () {
-    const authTrack = document.getElementById('game-track');
-    authTrack.volume = 0.03;
-    authTrack.play();
-};
 
 async function grabUserFunc() {
     return await getUser();
@@ -51,6 +50,8 @@ async function displayDino() {
         eggImg.classList.add('animation-idle');
         if (!dino.name) {
             nameDino();
+        } else {
+            dinoName.innerHTML = dino.name;
         }
     } else {
         dinoName.innerHTML = dino.name;
