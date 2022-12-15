@@ -62,21 +62,18 @@ p {
 }
 
 #dino-gifs {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     z-index: 2;
-    top: 22%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
-#dino-gifs img {
-    height: 8rem;
-}
-
+/* 
 #name {
     text-align: center;
     z-index: 2;
@@ -111,4 +108,4 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
+} */

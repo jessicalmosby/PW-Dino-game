@@ -235,3 +235,71 @@
         background-position: -1728px;
     }
 }
+
+.austin-sprite {
+    /* position: absolute; */
+    background: transparent url('/assets/about-sprites/austin-sprite.png') 0 0 no-repeat;
+    width: calc(864px / 4);
+    height: 216px;
+    animation: austin-sprite 1s steps(4) infinite;
+}
+
+@keyframes austin-sprite {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -864px;
+    }
+}
+
+.jess-sprite {
+    /* position: absolute; */
+    background: transparent url('/assets/about-sprites/jess-sprite.png') 0 0 no-repeat;
+    width: calc(648px / 3);
+    height: 216px;
+    animation: jess-sprite 1s steps(3) infinite;
+}
+
+@keyframes jess-sprite {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -648px;
+    }
+}
+
+.grey-sprite {
+    /* position: absolute; */
+    background: transparent url('/assets/about-sprites/grey-sprite.png') 0 0 no-repeat;
+    width: calc(1296px / 6);
+    height: 216px;
+    animation: grey-sprite 1s steps(6) infinite;
+}
+
+@keyframes grey-sprite {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1296px;
+    }
+}
+
+.moni-sprite {
+    /* position: absolute; */
+    background: transparent url('/assets/about-sprites/moni-sprite.png') 0 0 no-repeat;
+    width: calc(648px / 3);
+    height: 216px;
+    animation: moni-sprite 1s steps(3) infinite;
+}
+
+@keyframes moni-sprite {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -648px;
+    }
+}
