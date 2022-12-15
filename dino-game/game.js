@@ -11,6 +11,8 @@ const dinoName = document.getElementById('dino-name');
 
 const signOutLink = document.getElementById('sign-out-link');
 const eggImg = document.getElementById('egg-img');
+const feedButton = document.getElementById('feed-button');
+const exerButton = document.getElementById('exButton');
 
 const moveFx = document.getElementById('shake-audio');
 const crackFx = document.getElementById('crack-audio');
