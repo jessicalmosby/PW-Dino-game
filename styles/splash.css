@@ -1,10 +1,39 @@
 .splash-page-body {
     background: url('../assets/splashPageBackground.gif');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
     width: 100%;
     display: flex;
+    position: absolute;
     justify-content: flex-end;
+    top: 1rem;
+    padding-right: 2rem;
+}
+
+#dino-button-container {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 5rem;
+}
+
+.left-dinos {
+    height: 200px;
+}
+
+.right-dinos {
+    height: 200px;
+}
+
+footer {
+    position: absolute;
+    left: 1rem;
+    bottom: 2rem;
+}
+
+#start-button {
+    background-color: transparent;
 }

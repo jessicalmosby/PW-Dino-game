@@ -5,7 +5,6 @@
     align-items: flex-end;
     width: 100%;
     background-position-y: 90%;
-    cursor: url('../assets/dinoCursor.png'), auto;
 }
 
 #egg-div {
@@ -13,17 +12,14 @@
     justify-content: center;
     margin-right: 15%;
 }
-#egg-div:hover {
-    cursor: url('../assets/egg-crack.gif'), auto;
-}
 
 header {
     width: 100%;
-    top: 40px;
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    padding-right: 20px;
+    top: 1rem;
+    padding-right: 2rem;
 }
 
 #dino-name {

@@ -16,9 +16,7 @@ body {
     font-family: var(--primary-font);
     color: var(--text-color);
     background: var(--background);
-
-    /* display: grid; */
-    /* grid-template-rows: auto 1fr; */
+    cursor: url('../assets/small-dino-cursor.png'), auto;
 }
 
 .page-header {
