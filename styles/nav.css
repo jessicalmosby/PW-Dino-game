@@ -1,0 +1,8 @@
+#header {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    top: 1rem;
+    padding-right: 2rem;
+}

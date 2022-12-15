@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- title and favicon -->
+        <title>Dinogatchi</title>
+
+        <!-- js -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
+        ></script>
+        <script type="module" src="game.js"></script>
+
+        <!-- fonts -->
+        <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/game.css" />
+        <link rel="stylesheet" href="../styles/sprites.css" />
+        <!-- add link for page specific css -->
+    </head>
+    <header>
+        <nav>
+            <a href="../auth/index.html" id="sign-out-link">Sign out</a>
+            <a href="/index.html" id="home">Home</a>
+        </nav>
+    </header>
+    <body id="game-body">
+        <main>
+            <audio id="game-track" src="../assets/Audio/splashgametune.mp3" loop="loop"></audio>
+            <audio src="../assets/Audio/shake.mp3" id="shake-audio"></audio>
+            <audio src="../assets/Audio/crack.mp3" id="crack-audio"></audio>
+            <audio src="../assets/Audio/hatch.mp3" id="hatch-audio"></audio>
+            <audio src="../assets/Audio/outofshell.mp3" id="out-shell-audio"></audio>
+            <audio src="../assets/Audio/chomp.mp3" id="chomp-audio"></audio>
+            <audio src="../assets/Audio/jump.mp3" id="jump-audio"></audio>
+            <div id="action-buttons-container">
+                <button class="game-button" id="feed-button">Feed your Dino!</button>
+                <button class="game-button" id="ex-button">Exercise your Dino!</button>
+            </div>
+            <div id="egg-div">
+                <div id="dino-name"></div>
+                <div id="egg-img"></div>
+            </div>
+        </main>
+    </body>
+</html>

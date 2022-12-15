@@ -1,0 +1,111 @@
+@font-face {
+    font-family: dinoBubbleFont;
+    src: url(../assets/Jellies.ttf);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: black;
+}
+
+.spacing {
+    height: 35%;
+}
+
+p {
+    margin: 0px 30px;
+}
+
+#div-g {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #b6ff00;
+}
+
+#div-r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #ff0000;
+}
+
+#div-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #ffae00;
+}
+
+#div-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #0094ff;
+}
+
+#dinodivs-title {
+    font-family: dinoBubbleFont;
+    color: black;
+    text-align: center;
+    z-index: 2;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 5rem;
+}
+
+#dino-gifs {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 2;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+}
+
+/* 
+#name {
+    text-align: center;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#title {
+    text-align: center;
+    z-index: 2;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bio {
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+} */
