@@ -51,6 +51,8 @@ async function displayDino() {
         eggImg.classList.add('animation-idle');
         if (!dino.name) {
             nameDino();
+        } else {
+            dinoName.innerHTML = dino.name;
         }
     } else {
         dinoName.innerHTML = dino.name;
