@@ -30,5 +30,11 @@ header {
     /* background-color: rgba(250, 235, 215, 0.502); */
     color: rgb(254, 237, 199);
     font-family: '8BIT WONDER', sans-serif;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    padding-left: 4rem;
+}
+
+#egg-div {
+    padding-top: 20px;
+    height: 432px;
 }
