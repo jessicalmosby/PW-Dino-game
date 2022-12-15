@@ -20,6 +20,12 @@ window.addEventListener('load', async () => {
     await displayDino();
 });
 
+window.onclick = function () {
+    const authTrack = document.getElementById('game-track');
+    authTrack.volume = 0.03;
+    authTrack.play();
+};
+
 async function grabUserFunc() {
     return await getUser();
 }
