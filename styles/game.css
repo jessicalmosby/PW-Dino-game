@@ -7,12 +7,6 @@
     background-position-y: 90%;
 }
 
-#egg-div {
-    display: flex;
-    justify-content: center;
-    margin-right: 15%;
-}
-
 header {
     width: 100%;
     position: absolute;
@@ -31,8 +25,23 @@ header {
 }
 
 #egg-div {
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
     padding-top: 20px;
     height: 432px;
+}
+
+#dino-interaction {
+    display: flex;
+    flex-direction: row;
+}
+
+#dino-item {
+    height: 90px;
+    width: 90px;
+    background: url('/assets/apple.png');
+    background-size: cover;
 }
 
 #action-buttons-container {
