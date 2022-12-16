@@ -16,25 +16,31 @@ header {
     padding-right: 2rem;
 }
 
+#egg-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+    padding-top: 20px;
+    height: 432px;
+}
+
 #dino-name {
     /* background-color: rgba(250, 235, 215, 0.502); */
     color: rgb(254, 237, 199);
     font-family: '8BIT WONDER', sans-serif;
     font-size: 2.5rem;
-    padding-left: 4rem;
-}
-
-#egg-div {
-    display: flex;
-    justify-content: center;
-    margin-right: 15%;
-    padding-top: 20px;
-    height: 432px;
+    padding-left: 6rem;
 }
 
 #dino-interaction {
+    height: 432px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border: solid black 1px;
 }
 
 #dino-item {
